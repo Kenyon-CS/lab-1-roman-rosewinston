@@ -1,0 +1,4 @@
+roman 1 numeral: XII
+roman 1 value: 12
+roman 2 numeral: MCMLXXXVII
+roman 2 value: 1987

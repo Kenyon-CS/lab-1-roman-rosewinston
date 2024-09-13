@@ -22,7 +22,7 @@ $(TARGET): $(OBJS)
 main.o: main.cpp Roman.h
 	$(CXX) $(CXXFLAGS) -c main.cpp
 
-# Rule to compile Point.cpp into Point.o
+# Rule to compile Roman.cpp into Roman.o
 Point.o: Roman.cpp Roman.h
 	$(CXX) $(CXXFLAGS) -c Roman.cpp
 
