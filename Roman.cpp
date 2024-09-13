@@ -5,8 +5,8 @@
 
 // Default Constructor
 Roman::Roman(){
-    romanNumeral="";
-    integerValue = 0;
+    romanNumeral="I";
+    integerValue = 1;
 }
 
 //Numeral Constructor
