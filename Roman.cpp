@@ -53,7 +53,14 @@ std::string Roman::getRoman() const{
     return romanNumeral;
 }
 
-//Helper conversion function
+
+/**
+ * Helper conversion function for numeral to integer
+ * Precondition: char c is a roman numeral
+ * Postcondition: Returns the integer value associated with the roman numeral
+ * param c the individual numeral
+ * return the integer value of the individual numeral
+ */
 int convertNumeral(char c){
     if (c == 'I')
         return 1;

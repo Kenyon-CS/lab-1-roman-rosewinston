@@ -1,3 +1,7 @@
+//Created by Rose Winston and Andrew Pilat
+//Test file and user interface for Roman numeral class lab. 
+//This class converts numerals to integers and integers to numerals, storing them as objects that have both values
+//We both contributed equally to the development of this program and followed the guidelines for Pair Programming accurately and carefully.
 #include <iostream>
 #include <map>
 #include <string>
