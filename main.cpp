@@ -23,12 +23,12 @@ int main() {
     int input=0;
     std::string numeralInput;
     std::string loop = "y";
-    while(loop != "n"){
+    while(loop != "n"){ //Initializes loop for user interface
         std::cout << "Type a number between 1 and 3999 and we'll convert it to a roman numeral! ";
         std::cin >> input;
-        if (input != 0 && input <3999){
+        if (input != 0 && input <3999){ //Makes sure user is not inputting something that will not convert
             roman1.setInt(input);
-            std::cout << "The numeral is: " << roman1.getRoman() << std::endl;
+            std::cout << "The numeral is: " << roman1.getRoman() << std::endl; //Tests the getRoman method
         }
         else{
             std::cout << std::endl << "That was not a valid number" << std::endl;
@@ -37,7 +37,7 @@ int main() {
         std::cin >> numeralInput;
         if (numeralInput.length()<=20){
             roman1.setRoman(numeralInput);
-            std::cout << "The integer is: " << roman1.getInt() << std::endl;
+            std::cout << "The integer is: " << roman1.getInt() << std::endl; //Tests the getInt method
         }
         else{
             std::cout << std::endl << "Error, numeral too large" << std::endl;

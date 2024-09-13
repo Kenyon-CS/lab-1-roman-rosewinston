@@ -69,7 +69,7 @@ int convertNumeral(char c){
         return 500;
     if (c == 'M')
         return 1000;
-    return -1;
+    return -1; //This will never be used as the program assumes correct numeral input, if an input is incorrect this will cause an error with the final converted integer.
 }
 
 // Convert Roman numeral to Integer
@@ -117,22 +117,22 @@ std::string Roman::intToRoman(int value){
     }
     else{
         for(count=0; count<4; count++){
-            if(input2 >= 1000 && input2 <4000){
+            if(input2 >= 1000 && input2 <4000){ //converts the thousands "digits"
                 input1 = value/1000;
                 input2 = value%1000;
                 strcat (roman, thousands[input1-1]);
             }
-            if (input2 < 1000 && input2 >= 100){
+            if (input2 < 1000 && input2 >= 100){//converts the hundreds "digits"
                 input1 = (value%1000)/100;
                 input2 = value%100;
                 strcat ( roman, hundreds[input1-1]);
             }
-             if (input2 < 100 && input2>= 10){
+             if (input2 < 100 && input2>= 10){//converts the tens "digits"
             input1 = ((value%1000)%100)/10;
             input2 = value%10;
             strcat ( roman, tens[input1-1] );
             }
-            if (input2 <10 && input2 >= 1){  
+            if (input2 <10 && input2 >= 1){  //converts the ones "digits"
             input1 = (((value%1000)%100)%10);
             input2=0;
             strcat ( roman, units[input1-1] );
